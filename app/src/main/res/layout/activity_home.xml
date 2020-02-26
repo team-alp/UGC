@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:text="UGC"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/public_university_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="Public University"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+    <Button
+        android:id="@+id/private_university_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="Private University"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/public_university_Button_Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/public_university_Button_Id"
+        app:layout_constraintTop_toTopOf="@+id/public_university_Button_Id" />
+
+    <Button
+        android:id="@+id/international_university_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="International University"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/public_university_Button_Id"
+        app:layout_constraintStart_toStartOf="@+id/public_university_Button_Id"
+        app:layout_constraintTop_toBottomOf="@+id/public_university_Button_Id" />
+
+    <Button
+        android:id="@+id/CBHE_university_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:text="CBHE"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/international_university_Button_Id"
+        app:layout_constraintEnd_toEndOf="@+id/private_university_Button_Id"
+        app:layout_constraintStart_toStartOf="@+id/private_university_Button_Id"
+        app:layout_constraintTop_toTopOf="@+id/international_university_Button_Id" />
+
+    <Button
+        android:id="@+id/about_UGC_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="About UGC"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/international_university_Button_Id"
+        app:layout_constraintStart_toStartOf="@+id/international_university_Button_Id"
+        app:layout_constraintTop_toBottomOf="@+id/international_university_Button_Id" />
+
+    <Button
+        android:id="@+id/hot_line_Button_Id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="Hot Line"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/about_UGC_Button_Id"
+        app:layout_constraintEnd_toEndOf="@+id/CBHE_university_Button_Id"
+        app:layout_constraintStart_toStartOf="@+id/CBHE_university_Button_Id"
+        app:layout_constraintTop_toTopOf="@+id/about_UGC_Button_Id" />
+</androidx.constraintlayout.widget.ConstraintLayout>
